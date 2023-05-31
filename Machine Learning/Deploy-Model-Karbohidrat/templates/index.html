@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <style>
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .keterangan {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Image Classifier</h1>
+    <form class="p-3 text-center" action="/" method="post" enctype="multipart/form-data">
+        <input class="form-control" type="file" name="imagefile">
+        <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+    </form>
+    
+    {% if prediction %}
+        <p>Image is a {{ prediction }}</p>
+    {% endif %}
+
+    {% if nutrient_info %}
+        <div class="data-container">
+            <h2>Informasi Gizi:</h2>
+            <ul>
+                {% for row in nutrient_info %}
+                <li>
+                    <ul>
+                        {% for key, value in row.items() %}
+                        <li>{{ key }}: {{ value }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% if recommended_foods_list %}
+        <div class="recommended-container">
+            <h2>Makanan Dengan Gizi Serupa:</h2>
+            {% for i in range(recommended_foods_list|length) %}
+                <p>Food: {{ recommended_foods_list[i] }}</p>
+                <p>Size: {{ recommended_sizes_list[i] }}</p>
+                <ul>
+                    <li>Kalori: {{ df[df['Bahan'] == recommended_foods_list[i]]['Kalori'].values[0] }}</li>
+                    <li>Protein: {{ df[df['Bahan'] == recommended_foods_list[i]]['Protein(g)'].values[0] }} gr</li>
+                    <li>Lemak: {{ df[df['Bahan'] == recommended_foods_list[i]]['Lemak(g)'].values[0] }} gr</li>
+                    <li>Karbohidrat: {{ df[df['Bahan'] == recommended_foods_list[i]]['Karbohidrat(g)'].values[0] }} gr</li>
+                </ul>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
