@@ -12,13 +12,13 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Import model
-model = keras.models.load_model("model_kacang.h5")
-modelrekom = keras.models.load_model("Model Rekomendasi Kacang.h5")
+model = keras.models.load_model("model_karbo.h5")
+modelrekom = keras.models.load_model("rekomendasi_karbo.h5")
 
 
 def load_recipe_data():
     recipe_data = []
-    with open('Resep - Kacang.csv', 'r') as csvfile:
+    with open('Resep - Karbo.csv', 'r') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             kategori = row['Bahan']
@@ -60,8 +60,8 @@ def index():
         if file is None or file.filename == "":
             return jsonify({"error": "no file"})
         try:
-            class_names = ["Kacang Almond", "Kacang Hijau", "Kacang Kedelai", "Kacang Merah", "Kacang Panjang",
-                           "Kacang Tanah"]
+            class_names = ["Jagung", "Kentang", "Mie & Pasta",
+                           "Nasi", "Oatmeal", "Roti", "Singkong", "Ubi"]
             image_bytes = file.read()
             pillow_img = Image.open(io.BytesIO(image_bytes))
             predictions = predict(transform_image(pillow_img))
@@ -69,7 +69,7 @@ def index():
             predicted_class = class_names[predicted_class_index]
 
             # Membaca info gizi
-            df = pd.read_csv("Informasi Gizi Kacang.csv", sep=',')
+            df = pd.read_csv("Informasi Gizi Karbohidrat.csv", sep=',')
             # Menghilangkan spasi tambahan di kolom 'Bahan'
             df['Bahan'] = df['Bahan'].str.strip()
             # Nama makanan
@@ -84,7 +84,7 @@ def index():
             # Mengambil informasi nutrisi berdasarkan kelas prediksi
             predicted_class = class_names[predicted_class_index]
             nutrient_info = df.loc[df['Bahan'] == predicted_class, [
-                'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran']]
+                'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran',  'Keterangan']]
 
             # Konversi nutrient_info menjadi dictionary
             nutrient_info_dict = nutrient_info.to_dict(orient='records')
@@ -129,7 +129,7 @@ def index():
 
             for recommended_food in recommended_foods:
                 nutrient_info = df.loc[df['Bahan'] == recommended_food, [
-                    'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran']]
+                    'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran', 'Keterangan']]
                 recommended_nutrient_info.append(
                     nutrient_info.to_dict(orient='records')[0])
 
@@ -170,4 +170,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True)
+    app.run(debug=True)
