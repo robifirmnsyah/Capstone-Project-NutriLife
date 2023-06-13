@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cherry+Bomb+One&family=Kanit&family=Lilita+One&family=Monomaniac+One&family=Roboto+Slab&display=swap');
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #C77948;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Lilita One', cursive;
+}
+
+.navbar {
+  height: 40px;
+  width: 100%;
+  padding: 0;
+  background-color: #69502b;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  width: 300px;
+  padding: 8px;
+  color: #f3f3f3;
+}
+
+
+.nav-link:hover {
+  background-color: #a56035;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.actived {
+  background-color: #863400;
+  border-radius: 0 5px 0 0;
+}
+
+.nav-btn {
+  margin: 0 20px;
+  background-color: #69502b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #FCE4D4;
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.form {
+  display: flex;
+}
+
+.search-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.form button {
+  width: 100px;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #69502b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 16px;
+  background-color: #69502b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    max-width: 340px;
+    margin: 20px auto;
+    padding: 0px;
+    background-color: #FCE4D4;
+    border-radius: 5px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .navbar {
+    height: 40px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-link {
+    width: 170px;
+  }
+
+  .form {
+    display: flex;
+    margin: 0 20px;
+    flex-direction: column;
+  }
+
+  .form-container {
+    text-align: center;
+  }
+}
