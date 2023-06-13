@@ -90,86 +90,79 @@ def index():
             nutrient_info_dict = nutrient_info.to_dict(orient='records')
 
             # Mencari makanan dengan info gizi terdekat
-            detected_object = nutrient_info[[
-                'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)']].values[0]
-            detected_object_norm = (
-                detected_object - np.min(data, axis=0)) / (np.max(data, axis=0) - np.min(data, axis=0))
+            detected_nutrients = nutrient_info[[
+                'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)']]
+            mean_nutrients = detected_nutrients.mean()
+            # Normalisasi nutrisi yang dideteksi
+            detected_object = mean_nutrients.values
+            detected_object_norm = (detected_object - np.min(data, axis=0)) / \
+                (np.max(data, axis=0) - np.min(data, axis=0))
             predicted_calories = modelrekom.predict(
                 np.expand_dims(detected_object_norm, axis=0))
             predicted_calories = predicted_calories * \
-                (np.max(data, axis=0)[0] - np.min(data,
-                 axis=0)[0]) + np.min(data, axis=0)[0]
+                (np.max(data, axis=0)[0] - np.min(data, axis=0)
+                 [0]) + np.min(data, axis=0)[0]
             predicted_calories = np.squeeze(predicted_calories)
 
-            # Mencari 2 makanan dengan gizi terdekat untuk setiap baris
-            num_rows = nutrient_info.shape[0]
-            recommended_foods_list = []
-            recommended_sizes_list = []
-            recommended_nutrient_info_list = []
+            # Mencari 3 makanan dengan kalori terdekat
+            min_calories_diffs = []
+            recommended_foods = []
+            recommended_sizes = []
+            recommended_nutrient_info = []
 
-            for i in range(num_rows):
-                predicted_calories = nutrient_info.iloc[i]['Kalori']
-                min_calories_diffs = []
-                recommended_foods = []
-                recommended_sizes = []
-                recommended_nutrient_info = {}
-
-                for j in range(len(data)):
-                    calories_diff = abs(predicted_calories - data[j][0])
-                    # Skip food if it is the same as the detected food
-                    if food_names[j] == predicted_class:
-                        continue
-                    if len(min_calories_diffs) < 2:
+            for i in range(len(data)):
+                calories_diff = abs(predicted_calories - data[i][0])
+                if food_names[i] == predicted_class:
+                    continue
+                if len(min_calories_diffs) < 3:
+                    if food_names[i] not in recommended_foods:
                         min_calories_diffs.append(calories_diff)
-                        recommended_foods.append(food_names[j])
-                        recommended_sizes.append(df.loc[j, 'Ukuran'])
-                    else:
-                        max_diff_index = np.argmax(min_calories_diffs)
-                        if calories_diff < min_calories_diffs[max_diff_index]:
+                        recommended_foods.append(food_names[i])
+                        recommended_sizes.append(df.loc[i, 'Ukuran'])
+                else:
+                    max_diff_index = np.argmax(min_calories_diffs)
+                    if calories_diff < min_calories_diffs[max_diff_index]:
+                        if food_names[i] not in recommended_foods:
                             min_calories_diffs[max_diff_index] = calories_diff
-                            recommended_foods[max_diff_index] = food_names[j]
-                            recommended_sizes[max_diff_index] = df.loc[j, 'Ukuran']
+                            recommended_foods[max_diff_index] = food_names[i]
+                            recommended_sizes[max_diff_index] = df.loc[i, 'Ukuran']
 
-                recommended_nutrient_info = []
+            for recommended_food in recommended_foods:
+                nutrient_info = df.loc[df['Bahan'] == recommended_food, [
+                    'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran']]
+                recommended_nutrient_info.append(
+                    nutrient_info.to_dict(orient='records')[0])
 
-                for recommended_food in recommended_foods:
-                    nutrient_info = df.loc[df['Bahan'] == recommended_food, [
-                        'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran']]
-                    recommended_nutrient_info.append(
-                        nutrient_info.to_dict(orient='records')[0])
-
-                recommended_foods_list.extend(recommended_foods)
-                recommended_nutrient_info_list.extend(
-                    recommended_nutrient_info)
                 # Menggabungkan recommended_foods_list dan recommended_nutrient_info_list
                 combined_list = [{"food": food, "nutrient_info": nutrient_info} for food, nutrient_info in zip(
-                    recommended_foods_list, recommended_nutrient_info_list)]
+                    recommended_foods, recommended_nutrient_info)]
 
-                # Find the recommended recipes based on the predicted class
-                recipe_data = load_recipe_data()
-                recommended_recipes = []
+            # Find the recommended recipes based on the predicted class
+            recipe_data = load_recipe_data()
+            recommended_recipes = []
 
-                for data in recipe_data:
-                    if predicted_class == data['Bahan']:
-                        recommended_recipes.append(data)
+            for data in recipe_data:
+                if predicted_class == data['Bahan']:
+                    recommended_recipes.append(data)
 
-                # Display the details of each recommended recipe
-                recommended_recipe_details = []
-                for i, recipe in enumerate(recommended_recipes):
-                    recipe_details = {}
-                    recipe_details['name'] = recipe['Nama Resep']
-                    recipe_details['ingredients'] = recipe['Bahan yang dibutuhkan'].split(
-                        ';')
-                    recipe_details['steps'] = recipe['Cara Membuat'].split(';')
-                    recipe_details['kalori'] = recipe['Kalori']
-                    recommended_recipe_details.append(recipe_details)
+            # Display the details of each recommended recipe
+            recommended_recipe_details = []
+            for i, recipe in enumerate(recommended_recipes[:3]):
+                recipe_details = {}
+                recipe_details['name'] = recipe['Nama Resep']
+                recipe_details['ingredients'] = [ingredient.strip(
+                ) for ingredient in recipe['Bahan yang dibutuhkan'].split(';')]
+                recipe_details['steps'] = [step.strip()
+                                           for step in recipe['Cara Membuat'].split(';')]
+                recipe_details['kalori'] = recipe['Kalori']
+                recommended_recipe_details.append(recipe_details)
 
-                response = {
-                    "prediction": predicted_class,
-                    "nutrient_info": nutrient_info_dict,
-                    "recommended_foods_and_info": combined_list,
-                    "recommended_recipes": recommended_recipe_details
-                }
+            response = {
+                "prediction": predicted_class,
+                "nutrient_info": nutrient_info_dict,
+                "recommended_foods_and_info": combined_list,
+                "recommended_recipes": recommended_recipe_details
+            }
             return jsonify(response)
         except Exception as e:
             return jsonify({"error": str(e)})

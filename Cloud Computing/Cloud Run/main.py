@@ -12,8 +12,28 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Import model
-model = keras.models.load_model("model_daily.h5")
-modelrekom = keras.models.load_model("rekomendasi_daily.h5")
+model = keras.models.load_model("model_karbo.h5")
+modelrekom = keras.models.load_model("rekomendasi_karbo.h5")
+
+
+def load_recipe_data():
+    recipe_data = []
+    with open('Resep - Karbo.csv', 'r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            kategori = row['Bahan']
+            recipe_name = row['Nama Resep']
+            bahan = row['Bahan yang dibutuhkan']
+            cara_membuat = row['Cara Membuat']
+            kalori = row['Kalori']
+            recipe_data.append({
+                'Bahan': kategori,
+                'Nama Resep': recipe_name,
+                'Bahan yang dibutuhkan': bahan,
+                'Cara Membuat': cara_membuat,
+                'Kalori': kalori
+            })
+    return recipe_data
 
 
 def transform_image(img):
@@ -40,8 +60,8 @@ def index():
         if file is None or file.filename == "":
             return jsonify({"error": "no file"})
         try:
-            class_names = ["Keju", "Olahan Susu",
-                           "Telur Ayam", "Telur Bebek"]
+            class_names = ["Jagung", "Kentang", "Mie & Pasta",
+                           "Nasi", "Oatmeal", "Roti", "Singkong", "Ubi"]
             image_bytes = file.read()
             pillow_img = Image.open(io.BytesIO(image_bytes))
             predictions = predict(transform_image(pillow_img))
@@ -49,7 +69,7 @@ def index():
             predicted_class = class_names[predicted_class_index]
 
             # Membaca info gizi
-            df = pd.read_csv("Informasi Gizi Daily.csv", sep=',')
+            df = pd.read_csv("Informasi Gizi Karbohidrat.csv", sep=',')
             # Menghilangkan spasi tambahan di kolom 'Bahan'
             df['Bahan'] = df['Bahan'].str.strip()
             # Nama makanan
@@ -64,7 +84,7 @@ def index():
             # Mengambil informasi nutrisi berdasarkan kelas prediksi
             predicted_class = class_names[predicted_class_index]
             nutrient_info = df.loc[df['Bahan'] == predicted_class, [
-                'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran', 'Keterangan']]
+                'Kalori', 'Lemak(g)', 'Karbohidrat(g)', 'Protein(g)', 'Ukuran',  'Keterangan']]
 
             # Konversi nutrient_info menjadi dictionary
             nutrient_info_dict = nutrient_info.to_dict(orient='records')
@@ -117,12 +137,32 @@ def index():
                 combined_list = [{"food": food, "nutrient_info": nutrient_info} for food, nutrient_info in zip(
                     recommended_foods, recommended_nutrient_info)]
 
-                response = {
-                    "prediction": predicted_class,
-                    "nutrient_info": nutrient_info_dict,
-                    "recommended_foods_and_info": combined_list
-                }
+            # Find the recommended recipes based on the predicted class
+            recipe_data = load_recipe_data()
+            recommended_recipes = []
 
+            for data in recipe_data:
+                if predicted_class == data['Bahan']:
+                    recommended_recipes.append(data)
+
+            # Display the details of each recommended recipe
+            recommended_recipe_details = []
+            for i, recipe in enumerate(recommended_recipes[:3]):
+                recipe_details = {}
+                recipe_details['name'] = recipe['Nama Resep']
+                recipe_details['ingredients'] = [ingredient.strip(
+                ) for ingredient in recipe['Bahan yang dibutuhkan'].split(';')]
+                recipe_details['steps'] = [step.strip()
+                                           for step in recipe['Cara Membuat'].split(';')]
+                recipe_details['kalori'] = recipe['Kalori']
+                recommended_recipe_details.append(recipe_details)
+
+            response = {
+                "prediction": predicted_class,
+                "nutrient_info": nutrient_info_dict,
+                "recommended_foods_and_info": combined_list,
+                "recommended_recipes": recommended_recipe_details
+            }
             return jsonify(response)
         except Exception as e:
             return jsonify({"error": str(e)})
@@ -130,4 +170,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(port=4000, debug=True)
+    app.run(port=8080, debug=True)
