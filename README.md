@@ -14,6 +14,28 @@ So, we decided to make an application to control daily nutrition with some new f
 |    Asyrafbilal Fadhila Bhinar Jaya      |  C360DSX2422  |      Cloud Computing    |
 
 ## Mobile Development
+* Feature
+- login and register, for authentification user
+- Pick image from gallery, you can select an image from the gallery in preparation for uploading an image to detect food.
+- Take an image from camera, you can take image from camera in preparation for uploading an image to detect food
+- Calculator, for calculate the calories of the food we are looking for.
+- Send image to the cloud to get prediction, after you prepare the image, you can click the process button to send the image and detect the image food and issue nutrition and food recommendations
+
+* Dependencies
+- Lifecycle & Livedata
+- kotlinx-coroutines
+- Retrofit 2
+- Material Show Case
+- Ok Http 3
+- recyclerView
+- sharepreference & datastore
+- camera2
+- viewpager
+
+* Tools
+- Android Studio Electric Eel | 2022.1.1 Patch 1
+- JRE (Java Runtime Environment) or JDK (Java Development Kit).
+  
 ## Machine Learning
 ## Cloud Computing
 ### Featured Technologies
