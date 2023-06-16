@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Kalori</title>
+</head>
+<body>
+    <h1>Total Kalori</h1>
+    <table>
+        <tr>
+            <th>Bahan Makanan</th>
+            <th>Kalori</th>
+            <th>Berat (gram)</th>
+        </tr>
+        {% for food in selected_foods %}
+        <tr>
+            <td>{{ food[0] }}</td>
+            <td>{{ food[1] }}</td>
+            <td>{{ food[2] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>{{ total_kalori }}</strong></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    {% for food in selected_foods %}
+    <p>Kalori dari {{ food[0] }} sebanyak {{ food[2] }} gr adalah {{ food[1] }} kal</p>
+    {% endfor %}
+    <p>Total kalori sejauh ini adalah {{ total_kalori }} kal</p>
+    <br>
+    <a href="/">Kembali ke halaman utama</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Kalori</title>
+</head>
+<body>
+    <h1>Kalkulator Kalori</h1>
+    <form action="/" method="POST">
+        <label for="bahan">Nama Bahan:</label>
+        <input type="text" name="bahan" id="bahan" required>
+        <br>
+        <label for="berat">Berat (gr):</label>
+        <input type="number" name="berat" id="berat" required>
+        <br>
+        <label for="repeat">Apakah ingin menghitung kalori bahan lain?</label>
+        <input type="radio" name="repeat" id="repeat_yes" value="yes" required>
+        <label for="repeat_yes">Yes</label>
+        <input type="radio" name="repeat" id="repeat_no" value="no" required>
+        <label for="repeat_no">No</label>
+        <br>
+        <input type="submit" value="Hitung">
+    </form>
+</body>
+</html>

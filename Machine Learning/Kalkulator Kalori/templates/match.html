@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pilihan Bahan Mirip</title>
+</head>
+<body>
+    <h1>Penulisan bahan makanan kurang tepat. Mungkin maksud Anda:</h1>
+    <ul>
+        {% for option in match_options %}
+        <li>
+            <form action="/similar" method="POST">
+                <input type="hidden" name="bahan" value="{{ bahan }}">
+                <input type="hidden" name="selected_index" value="{{ option[0] }}">
+                <p>{{ option[1] }}</p>
+                <button type="submit">Pilih</button>
+            </form>
+        </li>
+        {% endfor %}
+        <li>
+            <form action="/" method="GET">
+                <input type="submit" value="Tidak ada pilihan saya">
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
