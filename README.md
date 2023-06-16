@@ -53,15 +53,15 @@ https://colab.research.google.com/drive/1yQDUpU6aog8Yw-LE7AiKoOLiNAjm88pB?usp=sh
 Load datasets from modified dataset that we host to Google Drive, here is the link:
 [https://drive.google.com/file/d/1-dOK_6g-Bkf8_SKcZKUwiCIj8TSqC7O5/view?usp=sharing](https://drive.google.com/folderview?id=12D2Ox36nD14qBxWmKuA9g7v1y2B6PTE1 )
 2. Training
-Using transfer learning Xception to make model accuracy better.
-Using CategoricalCrossentropy as loss
-Using Adam as optimizer
-Using RMSprop as optimizer
-Added more layer too to model.Sequential to make model accuracy more better:
-Added AveragePooling2D layer
-Added Flatten layer
-Set the callbacks EarlyStopping to stop training when accuracy doesn't improve
-4. Saved the Model to Google Drive
+*-Using transfer learning Xception to make model accuracy better.
+*-Using CategoricalCrossentropy as loss
+*-Using Adam as optimizer
+*-Using RMSprop as optimizer
+*-Added more layer too to model.Sequential to make model accuracy more better:
+*-Added AveragePooling2D layer
+*-Added Flatten layer
+*-Set the callbacks EarlyStopping to stop training when accuracy doesn't improve
+3. Saved the Model to Google Drive
 Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive):
 [https://drive.google.com/file/d/1-0ODyEWBJcERmvXXM5Ejk_VoxV7gI6SW/view](https://drive.google.com/drive/folders/1MuLsfXG4PiaCaxHCw_fy9oDzUIHT1XuL?usp=sharing)
 
