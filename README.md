@@ -60,7 +60,6 @@ Using RMSprop as optimizer
 Added more layer too to model.Sequential to make model accuracy more better:
 Added AveragePooling2D layer
 Added Flatten layer
-Training with Callback
 Set the callbacks EarlyStopping to stop training when accuracy doesn't improve
 4. Saved the Model to Google Drive
 Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive):
