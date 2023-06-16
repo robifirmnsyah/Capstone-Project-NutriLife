@@ -37,6 +37,35 @@ So, we decided to make an application to control daily nutrition with some new f
 - JRE (Java Runtime Environment) or JDK (Java Development Kit).
   
 ## Machine Learning
+The project is based from Google Colab (due to limited system requirements of our laptop/PC). Using Machine Learning with Tensorflow as framework to Classify the skin disease.
+
+Link to Colab:
+https://colab.research.google.com/drive/1pHLtCHAldd8zZMVqZaRTvqLWafxANQo3?usp=sharing   (Fruit Model)
+https://colab.research.google.com/drive/1wJSoAUnUOinyY-7diDMJDISrgdDETVrY?usp=sharing   (Carbohydrate Model)
+https://colab.research.google.com/drive/1fw35dPgCm6mlleXHRSojqU3Tq02Dg0Tm?usp=sharing   (Daily Product Model)
+https://colab.research.google.com/drive/1qKXjk4gj_lFaHb_xHyBKSqquGrVWhQ0b?usp=sharing   (Meat Model)
+https://colab.research.google.com/drive/1emfG6Tsbs5FfUAn_3hmcP1Ogy-cIVyI3?usp=sharing   (Vegetable Model)
+https://colab.research.google.com/drive/1ITzcSH1e8-Qj5vV4lwPUvQmyPBNCmze7?usp=sharing   (Spice Model)
+https://colab.research.google.com/drive/1IEKNf2kcxQNn0fhFGSGBntivv6Mjnc4a?usp=sharing    (Nuts Model)
+https://colab.research.google.com/drive/1yQDUpU6aog8Yw-LE7AiKoOLiNAjm88pB?usp=sharing    (Calculator Calories)
+
+1. Load Datasets
+Load datasets from modified dataset that we host to Google Drive, here is the link:
+[https://drive.google.com/file/d/1-dOK_6g-Bkf8_SKcZKUwiCIj8TSqC7O5/view?usp=sharing](https://drive.google.com/folderview?id=12D2Ox36nD14qBxWmKuA9g7v1y2B6PTE1 )
+2. Training
+Using transfer learning Xception to make model accuracy better.
+Using CategoricalCrossentropy as loss
+Using Adam as optimizer
+Using RMSprop as optimizer
+Added more layer too to model.Sequential to make model accuracy more better:
+Added AveragePooling2D layer
+Added Flatten layer
+Training with Callback
+Set the callbacks EarlyStopping to stop training when accuracy doesn't improve
+4. Saved the Model to Google Drive
+Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive):
+[https://drive.google.com/file/d/1-0ODyEWBJcERmvXXM5Ejk_VoxV7gI6SW/view](https://drive.google.com/drive/folders/1MuLsfXG4PiaCaxHCw_fy9oDzUIHT1XuL?usp=sharing)
+
 ## Cloud Computing
 ### Featured Technologies
 * [Node js](https://nodejs.org/en/) It is suitable for those who need real time communication between client and server and The single-threaded event system is very fast when handling many requests at once from clients
