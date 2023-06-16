@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
-import com.example.intermediate_baru.LOGOUT.Logout
+import com.example.intermediate_baru.STORY.LOGOUT.Logout
 import com.example.intermediate_baru.R
 import com.example.intermediate_baru.STORY.CALCULATOR.calculator
 import com.example.intermediate_baru.STORY.CAMERA.MAIN_CAMERA.MainCamea

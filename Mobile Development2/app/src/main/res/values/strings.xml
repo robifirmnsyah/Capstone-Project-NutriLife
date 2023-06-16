@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">intermediate_baru</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_home_act_naf">HomeActNaf</string>
+    <string name="home">Home</string>
+    <string name="calculator">Kalkulator</string>
+    <string name="resep">Resep</string>
+    <string name="Profile">Profile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">ini fragment home</string>
+    <string name="title_calculator">ini fragment calculator</string>
+    <string name="title_camera">ini fragment camera</string>
+    <string name="title_resep">ini fragment resep</string>
+    <string name="title_profile">ini fragment profile</string>
+    <string name="tab_text_1">ini fragment bahan</string>
+    <string name="tab_text_2">ini fragment resep</string>
+
+    <string-array name="options">
+        <item>buah-buahan</item>
+        <item>sayuran</item>
+        <item>karbohidrat</item>
+        <item>daily Product</item>
+        <item>kacang-kacangan</item>
+        <item>daging</item>
+        <item>rempah</item>
+    </string-array>
+
+
+    <string name="bibimbap">bibimbap</string>
+    <string name="nasi_goreng">inasi goreng</string>
+    <string name="jus_apel">jus apel</string>
+    <string name="roti_apel">roti apel</string>
+    <string name="pangsit_apel">pangsit apel</string>
+
+</resources>
