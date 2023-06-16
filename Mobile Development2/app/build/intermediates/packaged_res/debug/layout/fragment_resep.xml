@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".STORY.RESEP.MAIN.Resep" >
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <com.google.android.material.card.MaterialCardView
+          android:id="@+id/materialCardView"
+          android:layout_width="match_parent"
+          android:layout_height="74dp"
+          android:elevation="8dp"
+          app:cardCornerRadius="8dp"
+          app:cardUseCompatPadding="true"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+         <androidx.appcompat.widget.SearchView
+             android:id="@+id/searchBar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             app:iconifiedByDefault="false"
+             app:queryBackground="@android:color/transparent"
+             app:queryHint="silahkan cari resep" />
+
+      </com.google.android.material.card.MaterialCardView>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycler_list"
+          android:layout_width="400dp"
+          android:layout_height="660dp"
+          android:elevation="8dp"
+          app:cardUseCompatPadding="true"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+          tools:listitem="@layout/item_resep"
+          />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

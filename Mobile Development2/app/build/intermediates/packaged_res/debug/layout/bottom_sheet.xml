@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="731dp"
+        android:layout_margin="2dp">
+
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Informasi gizi beserta rekomendasi"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_gizi"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:hint="ini adalah hasil prediksi"
+            android:gravity="center"
+            android:layout_below="@id/judul" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

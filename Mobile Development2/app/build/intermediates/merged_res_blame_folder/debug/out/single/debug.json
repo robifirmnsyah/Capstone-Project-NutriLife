@@ -1,0 +1,286 @@
+[
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_logout.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_logout.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_detail_resep.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_detail_resep.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_jus_apel.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/jus_apel.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_send.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/send.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_dairy_products.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/dairy_products.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_rounded_bg.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/rounded_bg.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_roti_apel.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/roti_apel.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_profile.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/profile.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_main_page.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_main_page.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_register.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_notification.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/notification.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_image.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/image.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_resep.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/resep.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_item_resep.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/item_resep.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_rounded_bg2.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/rounded_bg2.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_pangsit_apel.jpeg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/pangsit_apel.jpeg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_daging_dagingan.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/daging_dagingan.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_bibimbap.jpeg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/bibimbap.jpeg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_logo_removebg_preview.png.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/logo_removebg_preview.png"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_user_box.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/user_box.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_fragment_home.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_karbo.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/karbo.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.intermediate_baru.app-pngs-54:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_list_bahan.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/list_bahan.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/menu_menu.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/menu/menu.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_camera.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/camera.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_nasi_goreng.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/nasi_goreng.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_fragment_calculator.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/fragment_calculator.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_main.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_sayuran.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/sayuran.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_home.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/home.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_calculator.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/calculator.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_fragment_bahan_makanan.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/fragment_bahan_makanan.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_kacang_kacangan.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/kacang_kacangan.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_bottom_sheet.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/bottom_sheet.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/xml_backup_rules.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_galery.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/galery.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_fragment_profile.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_bot_box.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/bot_box.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_main_camea.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_main_camea.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_circle_button.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/circle_button.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_switchcamera.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/switchcamera.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_mix_fruit.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/mix_fruit.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_list_item.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_send_box.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/send_box.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_login.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_fragment_resep.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/fragment_resep.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_bumbu_dapur.jpg.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/bumbu_dapur.jpg"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/drawable_calendar.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/drawable/calendar.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_activity_camera.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/activity_camera.xml"
+    },
+    {
+        "merged": "com.example.intermediate_baru.app-merged_res-59:/layout_fragment_step_resep.xml.flat",
+        "source": "com.example.intermediate_baru.app-main-61:/layout/fragment_step_resep.xml"
+    }
+]

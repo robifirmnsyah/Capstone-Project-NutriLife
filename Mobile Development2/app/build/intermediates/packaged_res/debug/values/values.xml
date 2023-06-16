@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options">
+        <item>buah-buahan</item>
+        <item>sayuran</item>
+        <item>karbohidrat</item>
+        <item>daily Product</item>
+        <item>kacang-kacangan</item>
+        <item>daging</item>
+        <item>rempah</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="coklat1">#FACE92</color>
+    <color name="coklat2">#C77948</color>
+    <color name="coklat3">#FCE4D4</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="Profile">Profile</string>
+    <string name="app_name">intermediate_baru</string>
+    <string name="bibimbap">bibimbap</string>
+    <string name="calculator">Kalkulator</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="jus_apel">jus apel</string>
+    <string name="logout">Logout</string>
+    <string name="nasi_goreng">inasi goreng</string>
+    <string name="pangsit_apel">pangsit apel</string>
+    <string name="resep">Resep</string>
+    <string name="roti_apel">roti apel</string>
+    <string name="tab_text_1">ini fragment bahan</string>
+    <string name="tab_text_2">ini fragment resep</string>
+    <string name="title_activity_home_act_naf">HomeActNaf</string>
+    <string name="title_calculator">ini fragment calculator</string>
+    <string name="title_camera">ini fragment camera</string>
+    <string name="title_home">ini fragment home</string>
+    <string name="title_profile">ini fragment profile</string>
+    <string name="title_resep">ini fragment resep</string>
+    <style name="Theme.Intermediate_baru" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/coklat1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

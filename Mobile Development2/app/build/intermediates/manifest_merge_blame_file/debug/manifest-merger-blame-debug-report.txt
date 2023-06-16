@@ -1,0 +1,214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.intermediate_baru"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <uses-feature android:name="android.hardware.camera.any" />
+13-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:7:5-64
+13-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:7:19-61
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:9:5-65
+15-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:9:22-62
+16
+17    <permission
+17-->[androidx.core:core:1.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\231b70ebcb9281ba5b5eb1d9efc577a7\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.intermediate_baru.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\231b70ebcb9281ba5b5eb1d9efc577a7\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\231b70ebcb9281ba5b5eb1d9efc577a7\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.intermediate_baru.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\231b70ebcb9281ba5b5eb1d9efc577a7\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\231b70ebcb9281ba5b5eb1d9efc577a7\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:11:5-51:19
+24        android:allowBackup="true"
+24-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:12:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\231b70ebcb9281ba5b5eb1d9efc577a7\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:13:9-65
+27        android:debuggable="true"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:14:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:15:9-43
+30        android:label="@string/app_name"
+30-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:16:9-41
+31        android:supportsRtl="true"
+31-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:17:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.Intermediate_baru" >
+33-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:18:9-55
+34        <activity
+34-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:20:9-22:40
+35            android:name="com.example.intermediate_baru.STORY.RESEP.MAIN.Detail_resep"
+35-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:21:13-58
+36            android:exported="false" />
+36-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:22:13-37
+37        <activity
+37-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:23:9-25:40
+38            android:name="com.example.intermediate_baru.STORY.NEW_CAMERA.CAMERA"
+38-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:24:13-52
+39            android:exported="false" />
+39-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:25:13-37
+40        <activity
+40-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:26:9-28:40
+41            android:name="com.example.intermediate_baru.STORY.CAMERA.MAIN_CAMERA.MainCamea"
+41-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:27:13-63
+42            android:exported="false" />
+42-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:28:13-37
+43        <activity
+43-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:29:9-32:57
+44            android:name="com.example.intermediate_baru.STORY.MainPage"
+44-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:30:13-43
+45            android:exported="false"
+45-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:31:13-37
+46            android:windowSoftInputMode="adjustResize" />
+46-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:32:13-55
+47        <activity
+47-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:33:9-35:40
+48            android:name="com.example.intermediate_baru.STORY.LOGOUT.Logout"
+48-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:34:13-48
+49            android:exported="false" />
+49-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:35:13-37
+50        <activity
+50-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:36:9-38:40
+51            android:name="com.example.intermediate_baru.REGISTER.RegisterAct"
+51-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:37:13-49
+52            android:exported="false" />
+52-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:38:13-37
+53        <activity
+53-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:39:9-41:40
+54            android:name="com.example.intermediate_baru.LOGIN.LoginAct"
+54-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:40:13-43
+55            android:exported="false" />
+55-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:41:13-37
+56        <activity
+56-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:42:9-50:20
+57            android:name="com.example.intermediate_baru.MainActivity"
+57-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:43:13-41
+58            android:exported="true" >
+58-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:44:13-36
+59            <intent-filter>
+59-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:45:13-49:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:46:17-69
+60-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:46:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:48:17-77
+62-->D:\KULIAH\MSIB BATCH 4_BANGKIT\TUGAS BESAR\CAPSTONE-TERBARU\Capstone-Project-NutriLife\Mobile Development2\app\src\main\AndroidManifest.xml:48:27-74
+63            </intent-filter>
+64        </activity>
+65
+66        <service
+66-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:24:9-33:19
+67            android:name="androidx.camera.core.impl.MetadataHolderService"
+67-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:25:13-75
+68            android:enabled="false"
+68-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:26:13-36
+69            android:exported="false" >
+69-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:27:13-37
+70            <meta-data
+70-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:30:13-32:89
+71                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+71-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:31:17-103
+72                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+72-->[androidx.camera:camera-camera2:1.2.2] C:\Users\lenovo\.gradle\caches\transforms-3\c1d2cf51f926be1372a8b7f60b9add4a\transformed\camera-camera2-1.2.2\AndroidManifest.xml:32:17-86
+73        </service>
+74
+75        <provider
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+76            android:name="androidx.startup.InitializationProvider"
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+77            android:authorities="com.example.intermediate_baru.androidx-startup"
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+78            android:exported="false" >
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+79            <meta-data
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+81                android:value="androidx.startup" />
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+82            <meta-data
+82-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\lenovo\.gradle\caches\transforms-3\5bf1eea8f186f8e27bd640a2463dd25b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+83-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\lenovo\.gradle\caches\transforms-3\5bf1eea8f186f8e27bd640a2463dd25b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+84                android:value="androidx.startup" />
+84-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\lenovo\.gradle\caches\transforms-3\5bf1eea8f186f8e27bd640a2463dd25b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+85            <meta-data
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+86                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+87                android:value="androidx.startup" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+88        </provider>
+89
+90        <uses-library
+90-->[androidx.window:window:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+91            android:name="androidx.window.extensions"
+91-->[androidx.window:window:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+93        <uses-library
+93-->[androidx.window:window:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+94            android:name="androidx.window.sidecar"
+94-->[androidx.window:window:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+96
+97        <receiver
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+98            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+99            android:directBootAware="false"
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+100            android:enabled="true"
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+101            android:exported="true"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+102            android:permission="android.permission.DUMP" >
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+104                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+107                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+110                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+113                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-3\0c95a5abecf35d6cf9fabdc723fd3e62\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+114            </intent-filter>
+115        </receiver>
+116    </application>
+117
+118</manifest>
